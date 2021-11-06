@@ -40,6 +40,7 @@ public class StepDefinitionWeb extends BaseRunner {
 		// Log4j logs in console output
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\log4j.properties");
 		System.setProperty("webdriver.chrome.driver", driverPath + "\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.whitelistedIps", "");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
