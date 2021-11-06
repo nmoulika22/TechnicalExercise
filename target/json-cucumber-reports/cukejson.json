@@ -1,0 +1,773 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3904431400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2027905400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2013967200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "when user launches the browser",
+            "match": {
+              "location": "StepDefinitionWeb.when_user_launches_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 698107600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2004508600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2006817300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user loads the website",
+            "match": {
+              "location": "StepDefinitionWeb.user_loads_the_website()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Verify user registration to Takealot website",
+        "description": "",
+        "id": "takealot-website-feature;verify-user-registration-to-takealot-website;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8280556500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2004851600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2000693800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user clicks on the Register link",
+            "match": {
+              "location": "StepDefinitionWeb.user_clicks_on_the_Register_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5009243400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2007266800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2013990500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user fills in the register form \"john\", \"grant\", \"john.grant\", \"test123\" and \"07000012345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"john\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"grant\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"john.grant\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"test123\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"07000012345\"",
+                  "offset": 77
+                }
+              ],
+              "location": "StepDefinitionWeb.user_fills_in_the_register_form(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105779600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2014012000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2013502100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "verify user is registered to the site \"Welcome to the TAKEALOT.com family!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome to the TAKEALOT.com family!\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitionWeb.verify_user_is_registered_to_the_site(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 853187000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2003885200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2002879100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "close the browser",
+            "match": {
+              "location": "StepDefinitionWeb.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WebUiTests"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2132534900,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2011558000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2008508600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "when user launches the browser",
+            "match": {
+              "location": "StepDefinitionWeb.when_user_launches_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393365000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000921400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2011446000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user loads the website",
+            "match": {
+              "location": "StepDefinitionWeb.user_loads_the_website()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Filter search and add specific watch to the basket",
+        "description": "",
+        "id": "takealot-website-feature;filter-search-and-add-specific-watch-to-the-basket;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6293442600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2016382300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2014820800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "user searches for the product \"watches\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"watches\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitionWeb.user_searches_for_the_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Step [filter by specific brand {string} and colour] is defined with 2 parameters at \u0027stepdef.StepDefinitionWeb.filter_by_specific_brand_and_colour(String,String) in file:/C:/Users/User/eclipse-workspace/MoulikaDemoProject/target/test-classes/\u0027.\nHowever, the gherkin step has 1 arguments:\n * \"Garmin\"\nStep text: filter by specific brand \"Garmin\" and colour\r\n\tat cucumber.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:84)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:36)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:45)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:65)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:829)\r\n",
+              "duration": 1524500,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2001316700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2000379600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "filter by specific brand \"Garmin\" and colour",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Garmin\"",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinitionWeb.filter_by_specific_brand_and_colour(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 15800,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 5600,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "add specific watch \"garmin-forerunner-35-smartwatch-black\" to the basket",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"garmin-forerunner-35-smartwatch-black\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionWeb.add_specific_watch_to_the_basket(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5800,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 7300,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 22,
+            "name": "verify whether the product added correctly to the basket \"Garmin Forerunner 35 Smartwatch - Black\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Garmin Forerunner 35 Smartwatch - Black\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitionWeb.verify_whether_the_product_added_correctly_to_the_basket(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5500,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5600,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 5800,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 23,
+            "name": "close the browser",
+            "match": {
+              "location": "StepDefinitionWeb.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WebUiTests"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2198604600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2003726000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2013283700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "when user launches the browser",
+            "match": {
+              "location": "StepDefinitionWeb.when_user_launches_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 589670000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2014257400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2003400700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user loads the website",
+            "match": {
+              "location": "StepDefinitionWeb.user_loads_the_website()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Global search and add specific watch to the basket",
+        "description": "",
+        "id": "takealot-website-feature;global-search-and-add-specific-watch-to-the-basket;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9390369600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000824200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2010003000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 30,
+            "name": "user searches for the product \"Garmin QuickFit 22mm Silicone Watch Band - Flame Red\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Garmin QuickFit 22mm Silicone Watch Band - Flame Red\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitionWeb.user_searches_for_the_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1593777100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2014407100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2014725400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 31,
+            "name": "add specific watch \"garmin-quickfit-22mm-silicone-watch-band-flame-red\" to the basket",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"garmin-quickfit-22mm-silicone-watch-band-flame-red\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionWeb.add_specific_watch_to_the_basket(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1105222800,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2002699200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2012546100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 32,
+            "name": "verify whether the product added correctly to the basket \"Garmin QuickFit 22mm Silicone Watch Band - Flame Red\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Garmin QuickFit 22mm Silicone Watch Band - Flame Red\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitionWeb.verify_whether_the_product_added_correctly_to_the_basket(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 826819100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2014194100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionApi.beforeStep(Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 2013022000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitionWeb.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 33,
+            "name": "close the browser",
+            "match": {
+              "location": "StepDefinitionWeb.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WebUiTests"
+          }
+        ]
+      }
+    ],
+    "name": "Takealot website Feature",
+    "description": "",
+    "id": "takealot-website-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/web/WebUi.feature",
+    "tags": [
+      {
+        "name": "@WebUiTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
