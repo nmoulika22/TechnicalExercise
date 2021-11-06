@@ -8,8 +8,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-
 import cucumber.api.Scenario;
 import cucumber.api.java.BeforeStep;
 import cucumber.api.java.en.Given;
@@ -41,8 +39,8 @@ public class StepDefinitionWeb extends BaseRunner {
 		BasicConfigurator.configure();
 		// Log4j logs in console output
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\log4j.properties");
-		System.setProperty("webdriver.edge.driver", driverPath + "\\msedgedriver.exe");
-		driver = new EdgeDriver();
+		System.setProperty("webdriver.chrome.driver", driverPath + "\\chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
 		log.info("User has opened the automated browser in maximize mode");
