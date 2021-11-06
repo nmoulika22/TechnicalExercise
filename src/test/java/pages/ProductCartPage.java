@@ -16,13 +16,13 @@ public class ProductCartPage {
 		this.driver = driver;
 	}
 
-	public void verifyProductAddedToCart(String expectedProductInCart) {
+	public void verifyProductAddedToCart(String expectedProductInCart) throws InterruptedException {
 		int expectedQuantityInCart = 1;
 		WebElement cartItemCount = driver.findElement(By.cssSelector("div.badge-count"));
 		Assert.assertEquals(expectedQuantityInCart, Integer.parseInt(cartItemCount.getText()));
 		WebElement cartButton = driver.findElement(By.cssSelector("button[class*='mini-cart-button']"));
 		cartButton.click();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		Thread.sleep(10000);
 		WebElement productInCartPage = driver.findElement(By.cssSelector("a [class*='item-title']"));
 		Assert.assertEquals(expectedProductInCart, productInCartPage.getText());
 	}
