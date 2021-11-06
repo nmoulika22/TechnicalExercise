@@ -17,6 +17,7 @@ public class ProductCartPage {
 	}
 
 	public void verifyProductAddedToCart(String expectedProductInCart) throws InterruptedException {
+		Thread.sleep(10000);
 		int expectedQuantityInCart = 1;
 		WebElement cartItemCount = driver.findElement(By.cssSelector("div.badge-count"));
 		Assert.assertEquals(expectedQuantityInCart, Integer.parseInt(cartItemCount.getText()));
