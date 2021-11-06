@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +22,7 @@ public class ProductCartPage {
 		Assert.assertEquals(expectedQuantityInCart, Integer.parseInt(cartItemCount.getText()));
 		WebElement cartButton = driver.findElement(By.cssSelector("button[class*='mini-cart-button']"));
 		cartButton.click();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		WebElement productInCartPage = driver.findElement(By.cssSelector("h3[class*='cart-item-module_item-title']"));
 		Assert.assertEquals(expectedProductInCart, productInCartPage.getText());
 	}
