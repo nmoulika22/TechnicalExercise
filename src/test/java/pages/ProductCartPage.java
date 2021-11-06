@@ -23,7 +23,7 @@ public class ProductCartPage {
 		WebElement cartButton = driver.findElement(By.cssSelector("button[class*='mini-cart-button']"));
 		cartButton.click();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		WebElement productInCartPage = driver.findElement(By.cssSelector("h3[class*='cart-item-module_item-title']"));
+		WebElement productInCartPage = driver.findElement(By.cssSelector("a [class*='item-title']"));
 		Assert.assertEquals(expectedProductInCart, productInCartPage.getText());
 	}
 }
