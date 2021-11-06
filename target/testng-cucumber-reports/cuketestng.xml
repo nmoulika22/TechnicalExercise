@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><testng-results failed="1" passed="2" skipped="0" total="3">
-<suite duration-ms="107672" name="cucumber.runtime.formatter.TestNGFormatter">
-<test duration-ms="107672" name="cucumber.runtime.formatter.TestNGFormatter">
+<?xml version="1.0" encoding="UTF-8"?><testng-results failed="1" passed="7" skipped="0" total="8">
+<suite duration-ms="145471" name="cucumber.runtime.formatter.TestNGFormatter">
+<test duration-ms="145471" name="cucumber.runtime.formatter.TestNGFormatter">
+<class name="Open weather website Feature">
+<test-method duration-ms="10476" finished-at="2021-11-06T13:34:10Z" name="Validate weather api call to current location by city name or city id or zip code" started-at="2021-11-06T13:34:10Z" status="PASS"/>
+<test-method duration-ms="8148" finished-at="2021-11-06T13:34:10Z" name="Validate weather api call to current location by city name or city id or zip code_2" started-at="2021-11-06T13:34:10Z" status="PASS"/>
+<test-method duration-ms="8177" finished-at="2021-11-06T13:34:10Z" name="Validate weather api call to current location by city name or city id or zip code_3" started-at="2021-11-06T13:34:10Z" status="PASS"/>
+<test-method duration-ms="8169" finished-at="2021-11-06T13:34:10Z" name="Validate weather api call to current location by city name or city id or zip code_4" started-at="2021-11-06T13:34:10Z" status="PASS"/>
+<test-method duration-ms="8256" finished-at="2021-11-06T13:34:10Z" name="Validate weather api call to current location by geographic coordinates" started-at="2021-11-06T13:34:10Z" status="PASS"/>
+</class>
 <class name="Takealot website Feature">
-<test-method duration-ms="42965" finished-at="2021-11-06T13:00:10Z" name="Verify user registration to Takealot website" started-at="2021-11-06T13:00:10Z" status="PASS"/>
-<test-method duration-ms="24886" finished-at="2021-11-06T13:00:10Z" name="Filter search and add specific watch to the basket" started-at="2021-11-06T13:00:10Z" status="FAIL">
+<test-method duration-ms="40630" finished-at="2021-11-06T13:34:10Z" name="Verify user registration to Takealot website" started-at="2021-11-06T13:34:10Z" status="PASS"/>
+<test-method duration-ms="24091" finished-at="2021-11-06T13:34:10Z" name="Filter search and add specific watch to the basket" started-at="2021-11-06T13:34:10Z" status="FAIL">
 <exception class="cucumber.runtime.CucumberException">
 <message><![CDATA[Given when user launches the browser........................................passed
 And user loads the website..................................................passed
@@ -42,7 +49,7 @@ Step text: filter by specific brand "Garmin" and colour
 ]]></full-stacktrace>
 </exception>
 </test-method>
-<test-method duration-ms="39821" finished-at="2021-11-06T13:00:10Z" name="Global search and add specific watch to the basket" started-at="2021-11-06T13:00:10Z" status="PASS"/>
+<test-method duration-ms="37524" finished-at="2021-11-06T13:34:10Z" name="Global search and add specific watch to the basket" started-at="2021-11-06T13:34:10Z" status="PASS"/>
 </class>
 </test>
 </suite>

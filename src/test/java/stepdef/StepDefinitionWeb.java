@@ -24,7 +24,7 @@ public class StepDefinitionWeb extends BaseRunner {
 	public WebDriver driver;
 	Scenario scenario;
 	final Logger log = Logger.getLogger(StepDefinitionWeb.class);
-	File driverPath = new File("C:\\Users\\" + System.getProperty("user.name") + "\\drivers");
+	File driverPath = new File("C:\\Users\\drivers");
 	public HomePage homePage;
 	UserRegistrationPage userRegistrationPage;
 	ProductCartPage productCartPage;

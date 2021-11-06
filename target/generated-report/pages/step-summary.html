@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin version 1.8.0 - Step Summary"> 
   <meta name="author" content="Cluecumber Report Plugin version 1.8.0"> 
-  <title>Step Summary - 2021/11/06 13:00:15</title> 
+  <title>Step Summary - 2021/11/06 13:34:14</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link rel="stylesheet" href="css/cluecumber.css" type="text/css"> 
   <link rel="stylesheet" href="css/cluecumber_custom.css"> 
@@ -64,11 +64,14 @@
         var chart = new Chart(ctx, eval({
   "data": {
     "labels": [
+      "i hit the api end point with parameter type {} and value {}",
+      "user clicks on the Register link",
+      "close the browser",
+      "i hit the api end point with parameter latitude {} and longitude {}",
       "verify user is registered to the site {}",
       "user searches for the product {}",
       "user fills in the register form {}, {}, {}, {} and {}",
-      "user clicks on the Register link",
-      "close the browser",
+      "verify the response is successful {}, {} and {}",
       "filter by specific brand {} and colour",
       "verify whether the product added correctly to the basket {}",
       "when user launches the browser",
@@ -78,11 +81,14 @@
     "datasets": [
       {
         "data": [
-          1,
-          1,
-          1,
+          4,
           1,
           2,
+          1,
+          1,
+          1,
+          1,
+          5,
           0,
           1,
           2,
@@ -99,6 +105,9 @@
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)"
         ],
         "label": "passed"
@@ -106,10 +115,13 @@
       {
         "data": [
           0,
+          0,
           1,
           0,
           0,
           1,
+          0,
+          0,
           1,
           1,
           1,
@@ -117,6 +129,9 @@
           1
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -141,9 +156,15 @@
           0,
           0,
           0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -170,7 +191,7 @@
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "10 Step(s)"
+            "labelString": "13 Step(s)"
           },
           "stepSize": 0.0
         }
@@ -241,7 +262,7 @@
      <li class="nav-item"> <a class="nav-link" href="pages/scenario-sequence.html">Scenario Sequence</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2021/11/06 13:00:15</span> 
+    <span class="text-light">2021/11/06 13:34:14</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
@@ -269,9 +290,9 @@
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush" data-cluecumber-item="step-summary"> 
-         <li class="list-group-item">10 Step(s) in<br> 3 Scenario(s) </li> 
+         <li class="list-group-item">13 Step(s) in<br> 8 Scenario(s) </li> 
         </ul> 
-        <li class="list-group-item"> 2 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 1 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"><span style="display:none">failed</span></i> 0 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> </li> 
+        <li class="list-group-item"> 7 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 1 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"><span style="display:none">failed</span></i> 0 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> </li> 
        </div> 
       </div> 
      </div> 
@@ -298,34 +319,14 @@
          </thead> 
          <tbody> 
           <tr> 
-           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.verify_user_is_registered_to_the_site(String)"> <a href="pages/step-scenarios/step_921275001.html">verify user is registered to the site {}</a> </span> </td> 
-           <td class="text-right"><strong>1</strong></td> 
-           <td class="text-right">1</td> 
+           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionApi.i_hit_the_api_end_point_with_parameter(String,String)"> <a href="pages/step-scenarios/step_1320858041.html">i hit the api end point with parameter type {} and value {}</a> </span> </td> 
+           <td class="text-right"><strong>4</strong></td> 
+           <td class="text-right">4</td> 
            <td class="text-right">0</td> 
            <td class="text-right">0</td> 
            <td class="text-right small">0m 00s 105ms</td> 
-           <td class="text-right small">0m 00s 105ms</td> 
-           <td class="text-right small">0m 00s 105ms</td> 
-          </tr> 
-          <tr> 
-           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.user_searches_for_the_product(String)"> <a href="pages/step-scenarios/step_01677928948.html">user searches for the product {}</a> </span> </td> 
-           <td class="text-right"><strong>2</strong></td> 
-           <td class="text-right">1</td> 
-           <td class="text-right">1</td> 
-           <td class="text-right">0</td> 
-           <td class="text-right small">0m 06s 293ms</td> 
-           <td class="text-right small">0m 09s 390ms</td> 
-           <td class="text-right small">0m 07s 841ms</td> 
-          </tr> 
-          <tr> 
-           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.user_fills_in_the_register_form(String,String,String,String,String)"> <a href="pages/step-scenarios/step_1323747281.html">user fills in the register form {}, {}, {}, {} and {}</a> </span> </td> 
-           <td class="text-right"><strong>1</strong></td> 
-           <td class="text-right">1</td> 
-           <td class="text-right">0</td> 
-           <td class="text-right">0</td> 
-           <td class="text-right small">0m 05s 009ms</td> 
-           <td class="text-right small">0m 05s 009ms</td> 
-           <td class="text-right small">0m 05s 009ms</td> 
+           <td class="text-right small">0m 02s 331ms</td> 
+           <td class="text-right small">0m 00s 676ms</td> 
           </tr> 
           <tr> 
            <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.user_clicks_on_the_Register_link()"> <a href="pages/step-scenarios/step_0261591583.html">user clicks on the Register link</a> </span> </td> 
@@ -333,9 +334,9 @@
            <td class="text-right">1</td> 
            <td class="text-right">0</td> 
            <td class="text-right">0</td> 
-           <td class="text-right small">0m 08s 280ms</td> 
-           <td class="text-right small">0m 08s 280ms</td> 
-           <td class="text-right small">0m 08s 280ms</td> 
+           <td class="text-right small">0m 07s 476ms</td> 
+           <td class="text-right small">0m 07s 476ms</td> 
+           <td class="text-right small">0m 07s 476ms</td> 
           </tr> 
           <tr> 
            <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.close_the_browser()"> <a href="pages/step-scenarios/step_529550330.html">close the browser</a> </span> </td> 
@@ -344,8 +345,58 @@
            <td class="text-right">1</td> 
            <td class="text-right">0</td> 
            <td class="text-right small">0m 00s 000ms</td> 
-           <td class="text-right small">0m 00s 853ms</td> 
-           <td class="text-right small">0m 00s 560ms</td> 
+           <td class="text-right small">0m 00s 920ms</td> 
+           <td class="text-right small">0m 00s 594ms</td> 
+          </tr> 
+          <tr> 
+           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionApi.i_hit_the_api_end_point_with_parameter_latitude_and_longitude(String,String)"> <a href="pages/step-scenarios/step_0919557060.html">i hit the api end point with parameter latitude {} and longitude {}</a> </span> </td> 
+           <td class="text-right"><strong>1</strong></td> 
+           <td class="text-right">1</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right small">0m 00s 211ms</td> 
+           <td class="text-right small">0m 00s 211ms</td> 
+           <td class="text-right small">0m 00s 211ms</td> 
+          </tr> 
+          <tr> 
+           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.verify_user_is_registered_to_the_site(String)"> <a href="pages/step-scenarios/step_921275001.html">verify user is registered to the site {}</a> </span> </td> 
+           <td class="text-right"><strong>1</strong></td> 
+           <td class="text-right">1</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right small">0m 00s 085ms</td> 
+           <td class="text-right small">0m 00s 085ms</td> 
+           <td class="text-right small">0m 00s 085ms</td> 
+          </tr> 
+          <tr> 
+           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.user_searches_for_the_product(String)"> <a href="pages/step-scenarios/step_01677928948.html">user searches for the product {}</a> </span> </td> 
+           <td class="text-right"><strong>2</strong></td> 
+           <td class="text-right">1</td> 
+           <td class="text-right">1</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right small">0m 05s 533ms</td> 
+           <td class="text-right small">0m 07s 217ms</td> 
+           <td class="text-right small">0m 06s 375ms</td> 
+          </tr> 
+          <tr> 
+           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.user_fills_in_the_register_form(String,String,String,String,String)"> <a href="pages/step-scenarios/step_1323747281.html">user fills in the register form {}, {}, {}, {} and {}</a> </span> </td> 
+           <td class="text-right"><strong>1</strong></td> 
+           <td class="text-right">1</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right small">0m 04s 513ms</td> 
+           <td class="text-right small">0m 04s 513ms</td> 
+           <td class="text-right small">0m 04s 513ms</td> 
+          </tr> 
+          <tr> 
+           <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionApi.verify_the_response_is_successful(String,String,String)"> <a href="pages/step-scenarios/step_473591137.html">verify the response is successful {}, {} and {}</a> </span> </td> 
+           <td class="text-right"><strong>5</strong></td> 
+           <td class="text-right">5</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right">0</td> 
+           <td class="text-right small">0m 00s 001ms</td> 
+           <td class="text-right small">0m 00s 073ms</td> 
+           <td class="text-right small">0m 00s 017ms</td> 
           </tr> 
           <tr> 
            <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.filter_by_specific_brand_and_colour(String,String)"> <a href="pages/step-scenarios/step_0564263387.html">filter by specific brand {} and colour</a> </span> </td> 
@@ -353,9 +404,9 @@
            <td class="text-right">0</td> 
            <td class="text-right">1</td> 
            <td class="text-right">0</td> 
-           <td class="text-right small">0m 00s 001ms</td> 
-           <td class="text-right small">0m 00s 001ms</td> 
-           <td class="text-right small">0m 00s 001ms</td> 
+           <td class="text-right small">0m 00s 000ms</td> 
+           <td class="text-right small">0m 00s 000ms</td> 
+           <td class="text-right small">0m 00s 000ms</td> 
           </tr> 
           <tr> 
            <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.verify_whether_the_product_added_correctly_to_the_basket(String)"> <a href="pages/step-scenarios/step_2060480811.html">verify whether the product added correctly to the basket {}</a> </span> </td> 
@@ -364,8 +415,8 @@
            <td class="text-right">1</td> 
            <td class="text-right">0</td> 
            <td class="text-right small">0m 00s 000ms</td> 
-           <td class="text-right small">0m 01s 105ms</td> 
-           <td class="text-right small">0m 00s 552ms</td> 
+           <td class="text-right small">0m 01s 479ms</td> 
+           <td class="text-right small">0m 00s 739ms</td> 
           </tr> 
           <tr> 
            <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.when_user_launches_the_browser()"> <a href="pages/step-scenarios/step_119088292.html">when user launches the browser</a> </span> </td> 
@@ -373,9 +424,9 @@
            <td class="text-right">2</td> 
            <td class="text-right">1</td> 
            <td class="text-right">0</td> 
-           <td class="text-right small">0m 02s 132ms</td> 
-           <td class="text-right small">0m 03s 904ms</td> 
-           <td class="text-right small">0m 02s 745ms</td> 
+           <td class="text-right small">0m 01s 980ms</td> 
+           <td class="text-right small">0m 02s 945ms</td> 
+           <td class="text-right small">0m 02s 339ms</td> 
           </tr> 
           <tr> 
            <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.add_specific_watch_to_the_basket(String)"> <a href="pages/step-scenarios/step_0478398751.html">add specific watch {} to the basket</a> </span> </td> 
@@ -384,8 +435,8 @@
            <td class="text-right">1</td> 
            <td class="text-right">0</td> 
            <td class="text-right small">0m 00s 000ms</td> 
-           <td class="text-right small">0m 01s 593ms</td> 
-           <td class="text-right small">0m 00s 796ms</td> 
+           <td class="text-right small">0m 01s 433ms</td> 
+           <td class="text-right small">0m 00s 716ms</td> 
           </tr> 
           <tr> 
            <td class="text-left"> <span data-toggle="tooltip" title="StepDefinitionWeb.user_loads_the_website()"> <a href="pages/step-scenarios/step_868153376.html">user loads the website</a> </span> </td> 
@@ -393,9 +444,9 @@
            <td class="text-right">2</td> 
            <td class="text-right">1</td> 
            <td class="text-right">0</td> 
-           <td class="text-right small">0m 00s 393ms</td> 
-           <td class="text-right small">0m 00s 698ms</td> 
-           <td class="text-right small">0m 00s 560ms</td> 
+           <td class="text-right small">0m 00s 395ms</td> 
+           <td class="text-right small">0m 00s 603ms</td> 
+           <td class="text-right small">0m 00s 480ms</td> 
           </tr> 
          </tbody> 
         </table> 
@@ -407,7 +458,7 @@
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span>Cluecumber Report Plugin version 1.8.0 - Report generated on 2021/11/06 13:00:15.</span> 
+    <span>Cluecumber Report Plugin version 1.8.0 - Report generated on 2021/11/06 13:34:14.</span> 
    </div> 
   </footer>   
  </body>

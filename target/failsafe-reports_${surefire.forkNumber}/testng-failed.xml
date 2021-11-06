@@ -6,7 +6,7 @@
       <class name="runner.BaseRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="6"/>
           <include name="after"/>
           <include name="tearDownClass"/>
           <include name="before"/>

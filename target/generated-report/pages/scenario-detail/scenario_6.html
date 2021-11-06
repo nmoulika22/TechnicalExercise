@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin version 1.8.0 - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin version 1.8.0"> 
-  <title>Scenario Details - 2021/11/06 11:21:41</title> 
+  <title>Scenario Details - 2021/11/06 13:34:14</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link rel="stylesheet" href="css/cluecumber.css" type="text/css"> 
   <link rel="stylesheet" href="css/cluecumber_custom.css"> 
@@ -74,12 +74,12 @@
     "datasets": [
       {
         "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
+          2945,
+          603,
+          7476,
+          4513,
+          85,
+          920
         ],
         "backgroundColor": [
           "rgba(40, 167, 69, 1.000)",
@@ -217,7 +217,7 @@
      <li class="nav-item"> <a class="nav-link" href="pages/scenario-sequence.html">Scenario Sequence</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2021/11/06 11:21:41</span> 
+    <span class="text-light">2021/11/06 13:34:14</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
@@ -247,8 +247,8 @@
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
          <li class="list-group-item">6 Step(s)</li> 
-         <li class="list-group-item"> 0 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 0 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"><span style="display:none">failed</span></i> 6 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> </li> 
-         <li class="list-group-item">Duration: 0m 02s 005ms</li> 
+         <li class="list-group-item"> 6 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 0 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"><span style="display:none">failed</span></i> 0 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> </li> 
+         <li class="list-group-item">Duration: 0m 40s 630ms</li> 
          <li class="list-group-item"> <a href="pages/tag-scenarios/tag_WebUiTests.html">@WebUiTests</a> </li> 
         </ul> 
         <button class="btn btn-outline-secondary btn-block collapsed" type="button" data-toggle="collapse" aria-expanded="true" data-cluecumber-item="step-hooks-button" data-target=".stepHook">Step Hooks </button> 
@@ -265,60 +265,18 @@
        <div class="card-body"> 
         <li class="list-group-item"> 
          <div class="stepHook collapse"> 
-          <div class="row row_failed"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionWeb.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 009ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"><span style="display:none">failed</span></i> 
-           </div> 
-           <div class="row w-100 p-3 m-0 scenarioErrorMessage"> 
-            <div class="w-100 text-left border border-danger"> 
-             <pre class="text-danger small p-2">cucumber.runtime.CucumberException: Failed to instantiate class stepdef.StepDefinitionWeb
-	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
-	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
-	at cucumber.runner.TestStep.run(TestStep.java:49)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:40)
-	at cucumber.runner.TestCase.run(TestCase.java:45)
-	at cucumber.runner.Runner.runPickle(Runner.java:40)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:65)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
-	... 23 more
-Caused by: java.lang.NullPointerException
-	at pages.HomePage.&lt;init&gt;(HomePage.java:13)
-	at utilities.BaseTest.&lt;init&gt;(BaseTest.java:22)
-	at stepdef.StepDefinitionWeb.&lt;init&gt;(StepDefinitionWeb.java:14)
-	... 28 more
-</pre> 
-            </div> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
@@ -330,7 +288,7 @@ Caused by: java.lang.NullPointerException
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 02s 005ms
+             0m 02s 010ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
@@ -338,7 +296,7 @@ Caused by: java.lang.NullPointerException
            </div> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-1 text-left small">
            1.
           </div> 
@@ -346,45 +304,45 @@ Caused by: java.lang.NullPointerException
            <span data-toggle="tooltip" title="StepDefinitionWeb.when_user_launches_the_browser()"> <a href="pages/step-scenarios/step_119088292.html">Given when user launches the browser</a> </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 00s 000ms 
+            0m 02s 945ms 
           </div> 
           <div class="col-1 text-right"> 
-           <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionWeb.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 004ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionApi.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 008ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-1 text-left small">
            2.
           </div> 
@@ -392,45 +350,45 @@ Caused by: java.lang.NullPointerException
            <span data-toggle="tooltip" title="StepDefinitionWeb.user_loads_the_website()"> <a href="pages/step-scenarios/step_868153376.html">And user loads the website</a> </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 00s 000ms 
+            0m 00s 603ms 
           </div> 
           <div class="col-1 text-right"> 
-           <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionWeb.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 009ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionApi.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 007ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-1 text-left small">
            3.
           </div> 
@@ -438,45 +396,45 @@ Caused by: java.lang.NullPointerException
            <span data-toggle="tooltip" title="StepDefinitionWeb.user_clicks_on_the_Register_link()"> <a href="pages/step-scenarios/step_0261591583.html">When user clicks on the Register link</a> </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 00s 000ms 
+            0m 07s 476ms 
           </div> 
           <div class="col-1 text-right"> 
-           <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionWeb.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 014ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionApi.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 001ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-1 text-left small">
            4.
           </div> 
@@ -484,45 +442,45 @@ Caused by: java.lang.NullPointerException
            <span data-toggle="tooltip" title="StepDefinitionWeb.user_fills_in_the_register_form(String,String,String,String,String)"> <a href="pages/step-scenarios/step_1323747281.html">And user fills in the register form <strong>"john"</strong>, <strong>"grant"</strong>, <strong>"john.grant"</strong>, <strong>"test123"</strong> and <strong>"07000012345"</strong></a> </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 00s 000ms 
+            0m 04s 513ms 
           </div> 
           <div class="col-1 text-right"> 
-           <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionWeb.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 002ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionApi.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 000ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-1 text-left small">
            5.
           </div> 
@@ -530,45 +488,45 @@ Caused by: java.lang.NullPointerException
            <span data-toggle="tooltip" title="StepDefinitionWeb.verify_user_is_registered_to_the_site(String)"> <a href="pages/step-scenarios/step_921275001.html">Then verify user is registered to the site <strong>"Welcome to the TAKEALOT.com family!"</strong></a> </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 00s 000ms 
+            0m 00s 085ms 
           </div> 
           <div class="col-1 text-right"> 
-           <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionWeb.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 007ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
          <div class="stepHook collapse"> 
-          <div class="row row_skipped"> 
+          <div class="row row_passed"> 
            <div class="col-1"></div> 
            <div class="col-8 text-left"> 
             <i>StepDefinitionApi.beforeStep(Scenario)</i> 
            </div> 
            <div class="col-2 text-left small"> 
             <nobr>
-             0m 00s 000ms
+             0m 02s 009ms
             </nobr> 
            </div> 
            <div class="col-1 text-right"> 
-            <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
            </div> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-1 text-left small">
            6.
           </div> 
@@ -576,10 +534,10 @@ Caused by: java.lang.NullPointerException
            <span data-toggle="tooltip" title="StepDefinitionWeb.close_the_browser()"> <a href="pages/step-scenarios/step_529550330.html">Then close the browser</a> </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 00s 000ms 
+            0m 00s 920ms 
           </div> 
           <div class="col-1 text-right"> 
-           <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
           </div> 
          </div> </li> 
        </div> 
@@ -590,7 +548,7 @@ Caused by: java.lang.NullPointerException
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span>Cluecumber Report Plugin version 1.8.0 - Report generated on 2021/11/06 11:21:41.</span> 
+    <span>Cluecumber Report Plugin version 1.8.0 - Report generated on 2021/11/06 13:34:14.</span> 
    </div> 
   </footer>   
  </body>
