@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +27,8 @@ public class ProductCartPage {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", cartButton);
 		Thread.sleep(20000);
+		Set<String> windows = driver.getWindowHandles();
+		System.out.println("Window count: "+windows.size());
 		System.out.println(driver.getTitle());
 		WebElement productInCartPage = driver.findElement(By.cssSelector("a h3"));
 		System.out.println(productInCartPage.getText().trim());
