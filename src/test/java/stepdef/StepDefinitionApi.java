@@ -33,7 +33,7 @@ public class StepDefinitionApi {
 		// Log4j logs in console output
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\log4j.properties");
 		RestAssured.baseURI = "http://" + BASE_URL + param + "=" + value + "&appid=" + API_KEY;
-		System.out.println(BASE_URL + param + "=" + value + "&appid=" + API_KEY);
+		log.info("API URL: "+BASE_URL + param + "=" + value + "&appid=" + API_KEY);
 		RequestSpecification rs = RestAssured.given();
 		try {
 			response = rs.request(Method.GET, RestAssured.baseURI);
@@ -48,7 +48,7 @@ public class StepDefinitionApi {
 		// Log4j logs in console output
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\log4j.properties");
 		RestAssured.baseURI = "http://" + BASE_URL + "lat=" + lat + "&lon=" + lon + "&appid=" + API_KEY;
-		System.out.println(BASE_URL + "lat=" + lat + "&lon=" + lon + "&appid=" + API_KEY);
+		log.info("API URL: "+BASE_URL + "lat=" + lat + "&lon=" + lon + "&appid=" + API_KEY);
 		RequestSpecification rs = RestAssured.given();
 		try {
 			response = rs.request(Method.GET, RestAssured.baseURI);
@@ -60,7 +60,7 @@ public class StepDefinitionApi {
 	@Then("verify the response is successful {string}, {string} and {string}")
 	public void verify_the_response_is_successful(String code, String country, String name) {
 		Assert.assertEquals(200, Integer.parseInt(code));
-		System.out.println(response.asString());
+		log.info(response.asString());
 		Assert.assertEquals(response.asString().contains(country), true);
 		Assert.assertEquals(response.asString().toLowerCase().contains(name), true);
 		log.info("API response is successful");

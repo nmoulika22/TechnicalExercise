@@ -2,7 +2,7 @@ package pages;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
+import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +13,7 @@ import utilities.Utilities;
 public class ProductCartPage {
 
 	WebDriver driver;
+	static Logger log = Logger.getLogger(ProductCartPage.class.getName());
 
 	public ProductCartPage(WebDriver driver) {
 		this.driver = driver;
@@ -24,7 +25,7 @@ public class ProductCartPage {
 		WebElement cartItemCount = driver.findElement(By.cssSelector("div.badge-count"));
 		Thread.sleep(1000);
 		Assert.assertEquals(expectedQuantityInCart, Integer.parseInt(cartItemCount.getText()));
-		System.out.println("Actual cart quantity: "+cartItemCount.getText());
+		log.info("Actual cart quantity: "+cartItemCount.getText());
 		WebElement cartButton = driver.findElement(By.cssSelector("span.cart-icon"));
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", cartButton);
@@ -37,9 +38,10 @@ public class ProductCartPage {
 			driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 		}
 		Utilities.takeScreenshot(driver, System.getProperty("user.dir") + "\\screenshots\\cartpage.png");
-		System.out.println(driver.getTitle());
+		log.info(driver.getTitle());
+		Assert.assertEquals("Cart - TAKEALOT", driver.getTitle().trim());
 		WebElement productInCartPage = driver.findElement(By.cssSelector("a h3"));
-		System.out.println(productInCartPage.getText().trim());
+		log.info(productInCartPage.getText().trim());
 		Assert.assertEquals(expectedProductInCart, productInCartPage.getText());
 	}
 }

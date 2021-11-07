@@ -1,17 +1,17 @@
 package pages;
 
 import java.util.concurrent.TimeUnit;
-
+import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import stepdef.StepDefinitionWeb;
 
 public class HomePage extends StepDefinitionWeb {
 
 	WebDriver driver;
+	static Logger log = Logger.getLogger(HomePage.class.getName());
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
