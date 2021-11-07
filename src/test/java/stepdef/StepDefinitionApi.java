@@ -1,5 +1,8 @@
 package stepdef;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -15,11 +18,16 @@ import io.restassured.specification.RequestSpecification;
 
 public class StepDefinitionApi {
 
-	private static final String API_KEY = "2911f66f0267c47b0755a56cacf64452";
 	Scenario scenario;
 	private static final String BASE_URL = "api.openweathermap.org/data/2.5/weather?";
 	private static Response response;
 	final Logger log = Logger.getLogger(StepDefinitionApi.class);
+	Properties properties = new Properties();
+	
+	public StepDefinitionApi() throws IOException {
+		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\App.properties");
+		properties.load(file);
+	}
 
 	@BeforeStep
 	public void beforeStep(Scenario scenario) throws InterruptedException {
@@ -32,8 +40,8 @@ public class StepDefinitionApi {
 		BasicConfigurator.configure();
 		// Log4j logs in console output
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\log4j.properties");
-		RestAssured.baseURI = "http://" + BASE_URL + param + "=" + value + "&appid=" + API_KEY;
-		log.info("API URL: "+BASE_URL + param + "=" + value + "&appid=" + API_KEY);
+		RestAssured.baseURI = "http://" + BASE_URL + param + "=" + value + "&appid=" + properties.getProperty("API_KEY");
+		log.info("API URL: "+BASE_URL + param + "=" + value + "&appid=" + properties.getProperty("API_KEY"));
 		RequestSpecification rs = RestAssured.given();
 		try {
 			response = rs.request(Method.GET, RestAssured.baseURI);
@@ -47,8 +55,8 @@ public class StepDefinitionApi {
 		BasicConfigurator.configure();
 		// Log4j logs in console output
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\log4j.properties");
-		RestAssured.baseURI = "http://" + BASE_URL + "lat=" + lat + "&lon=" + lon + "&appid=" + API_KEY;
-		log.info("API URL: "+BASE_URL + "lat=" + lat + "&lon=" + lon + "&appid=" + API_KEY);
+		RestAssured.baseURI = "http://" + BASE_URL + "lat=" + lat + "&lon=" + lon + "&appid=" + properties.getProperty("API_KEY");
+		log.info("API URL: "+BASE_URL + "lat=" + lat + "&lon=" + lon + "&appid=" + properties.getProperty("API_KEY"));
 		RequestSpecification rs = RestAssured.given();
 		try {
 			response = rs.request(Method.GET, RestAssured.baseURI);

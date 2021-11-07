@@ -491,3 +491,38 @@
 2021-11-07 16:44:29 INFO  StepDefinitionWeb:48 - User has opened the automated browser in maximize mode
 2021-11-07 16:44:34 INFO  StepDefinitionWeb:54 - User loads the Takealot website in the browser
 2021-11-07 16:46:04 INFO  StepDefinitionWeb:107 - Status of the test is: PASSED
+2021-11-07 19:47:25 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?q=London&appid=null
+2021-11-07 19:47:33 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:47:37 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?q=Hyderabad&appid=null
+2021-11-07 19:47:41 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:47:45 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?id=2172797&appid=null
+2021-11-07 19:47:51 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:47:55 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?zip=94040&appid=null
+2021-11-07 19:47:59 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:48:03 INFO  StepDefinitionApi:59 - API URL: api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=null
+2021-11-07 19:48:07 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:50:00 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?q=London&appid=null
+2021-11-07 19:50:07 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:50:11 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?q=Hyderabad&appid=null
+2021-11-07 19:50:15 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:50:19 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?id=2172797&appid=null
+2021-11-07 19:50:24 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:50:28 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?zip=94040&appid=null
+2021-11-07 19:50:32 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:50:36 INFO  StepDefinitionApi:59 - API URL: api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=null
+2021-11-07 19:50:41 INFO  StepDefinitionApi:71 - {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+2021-11-07 19:52:12 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?q=London&appid=2911f66f0267c47b0755a56cacf64452
+2021-11-07 19:52:19 INFO  StepDefinitionApi:71 - {"coord":{"lon":-0.1257,"lat":51.5085},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03n"}],"base":"stations","main":{"temp":280.43,"feels_like":278.22,"temp_min":278.22,"temp_max":282.58,"pressure":1023,"humidity":80},"visibility":10000,"wind":{"speed":3.27,"deg":286,"gust":9.41},"clouds":{"all":37},"dt":1636313946,"sys":{"type":2,"id":2019646,"country":"GB","sunrise":1636268685,"sunset":1636302219},"timezone":0,"id":2643743,"name":"London","cod":200}
+2021-11-07 19:52:19 INFO  StepDefinitionApi:74 - API response is successful
+2021-11-07 19:52:23 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?q=Hyderabad&appid=2911f66f0267c47b0755a56cacf64452
+2021-11-07 19:52:28 INFO  StepDefinitionApi:71 - {"coord":{"lon":78.4744,"lat":17.3753},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":293.88,"feels_like":294.18,"temp_min":293.88,"temp_max":293.88,"pressure":1014,"humidity":83},"visibility":5000,"wind":{"speed":3.09,"deg":40},"clouds":{"all":40},"dt":1636314743,"sys":{"type":1,"id":9213,"country":"IN","sunrise":1636332455,"sunset":1636373529},"timezone":19800,"id":1269843,"name":"Hyderabad","cod":200}
+2021-11-07 19:52:28 INFO  StepDefinitionApi:74 - API response is successful
+2021-11-07 19:52:32 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?id=2172797&appid=2911f66f0267c47b0755a56cacf64452
+2021-11-07 19:52:37 INFO  StepDefinitionApi:71 - {"coord":{"lon":145.7667,"lat":-16.9167},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":297.11,"feels_like":297.96,"temp_min":297.1,"temp_max":297.63,"pressure":1009,"humidity":92},"visibility":10000,"wind":{"speed":0.51,"deg":170},"clouds":{"all":75},"dt":1636314753,"sys":{"type":1,"id":9490,"country":"AU","sunrise":1636313781,"sunset":1636359900},"timezone":36000,"id":2172797,"name":"Cairns","cod":200}
+2021-11-07 19:52:37 INFO  StepDefinitionApi:74 - API response is successful
+2021-11-07 19:52:41 INFO  StepDefinitionApi:44 - API URL: api.openweathermap.org/data/2.5/weather?zip=94040&appid=2911f66f0267c47b0755a56cacf64452
+2021-11-07 19:52:46 INFO  StepDefinitionApi:71 - {"coord":{"lon":-122.088,"lat":37.3855},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":288.79,"feels_like":287.72,"temp_min":286.66,"temp_max":290.58,"pressure":1021,"humidity":50},"visibility":10000,"wind":{"speed":0.89,"deg":63,"gust":4.02},"clouds":{"all":1},"dt":1636314762,"sys":{"type":2,"id":2017352,"country":"US","sunrise":1636295983,"sunset":1636333466},"timezone":-28800,"id":0,"name":"Mountain View","cod":200}
+2021-11-07 19:52:46 INFO  StepDefinitionApi:74 - API response is successful
+2021-11-07 19:52:50 INFO  StepDefinitionApi:59 - API URL: api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=2911f66f0267c47b0755a56cacf64452
+2021-11-07 19:52:55 INFO  StepDefinitionApi:71 - {"coord":{"lon":139,"lat":35},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04n"}],"base":"stations","main":{"temp":286.66,"feels_like":284.14,"temp_min":284.51,"temp_max":286.66,"pressure":1022,"humidity":3},"visibility":10000,"wind":{"speed":4.83,"deg":56,"gust":9.03},"clouds":{"all":90},"dt":1636314652,"sys":{"type":2,"id":2019346,"country":"JP","sunrise":1636319481,"sunset":1636357448},"timezone":32400,"id":1851632,"name":"Shuzenji","cod":200}
+2021-11-07 19:52:55 INFO  StepDefinitionApi:74 - API response is successful
