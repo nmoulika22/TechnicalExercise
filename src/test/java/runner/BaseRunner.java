@@ -8,7 +8,7 @@ import cucumber.api.CucumberOptions;
 @CucumberOptions(glue = "stepdef", plugin = { "json:target/json-cucumber-reports/cukejson.json",
 		"testng:target/testng-cucumber-reports/cuketestng.xml",
 		"rerun:target/rerun.txt" }, features = "src/test/resources/feature", monochrome = false, strict = true, dryRun = false, tags = {
-				"not @ApiTests or @WebUiTests" })
+				"@ApiTests or @WebUiTests" })
 public class BaseRunner extends AbstractTestNGCucumberParallelTests {
 
 	private static long duration;
