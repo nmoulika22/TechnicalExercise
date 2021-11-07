@@ -1,6 +1,7 @@
 package stepdef;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.BasicConfigurator;
@@ -95,7 +96,7 @@ public class StepDefinitionWeb extends BaseRunner {
 
 	@Then("verify whether the product added correctly to the basket {string}")
 	public void verify_whether_the_product_added_correctly_to_the_basket(String expectedProductInCart)
-			throws InterruptedException {
+			throws InterruptedException, IOException {
 		productCartPage = new ProductCartPage(driver);
 		productCartPage.verifyProductAddedToCart(expectedProductInCart);
 	}
