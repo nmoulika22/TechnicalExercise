@@ -22,12 +22,15 @@ public class ProductCartPage {
 		WebElement cartItemCount = driver.findElement(By.cssSelector("div.badge-count"));
 		Thread.sleep(1000);
 		Assert.assertEquals(expectedQuantityInCart, Integer.parseInt(cartItemCount.getText()));
+		System.out.println("Actual cart quantity: "+cartItemCount.getText());
 		WebElement cartButton = driver.findElement(By.cssSelector("span.cart-icon"));
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", cartButton);
 		Thread.sleep(20000);
-		Utilities.takeScreenshot(driver,
-				System.getProperty("user.dir")+"\\cartpage.png");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0,0)");
+		Thread.sleep(3000);
+		Utilities.takeScreenshot(driver, System.getProperty("user.dir") + "\\cartpage.png");
 		System.out.println(driver.getTitle());
 		WebElement productInCartPage = driver.findElement(By.cssSelector("a h3"));
 		System.out.println(productInCartPage.getText().trim());
