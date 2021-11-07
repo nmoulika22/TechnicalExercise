@@ -30,7 +30,7 @@ public class ProductCartPage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0,0)");
 		Thread.sleep(3000);
-		Utilities.takeScreenshot(driver, System.getProperty("user.dir") + "\\cartpage.png");
+		Utilities.takeScreenshot(driver, System.getProperty("user.dir") + "\\screenshots\\cartpage.png");
 		System.out.println(driver.getTitle());
 		WebElement productInCartPage = driver.findElement(By.cssSelector("a h3"));
 		System.out.println(productInCartPage.getText().trim());
