@@ -83,7 +83,7 @@ public class StepDefinitionWeb extends BaseRunner {
 	}
 
 	@When("filter by specific brand {string} and colour")
-	public void filter_by_specific_brand_and_colour(String brand) throws InterruptedException {
+	public void filter_by_specific_brand_and_colour(String brand) {
 		homePage = new HomePage(driver);
 		homePage.filterSearchResults(brand);
 	}

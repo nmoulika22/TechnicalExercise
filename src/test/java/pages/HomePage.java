@@ -29,26 +29,17 @@ public class HomePage extends StepDefinitionWeb {
 		globalSearchButton.click();
 	}
 
-	public void filterSearchResults(String brand) throws InterruptedException {
+	public void filterSearchResults(String brand) {
 		WebElement brandInputField = driver.findElement(By.cssSelector("input[placeholder='Search by Brand']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", brandInputField);
-		Thread.sleep(1000);
 		brandInputField.sendKeys(brand);
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 		WebElement brandCheckbox = driver.findElement(By.cssSelector("label[for='filter_Garmin_Garmin']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", brandCheckbox);
-		Thread.sleep(1000);
 		brandCheckbox.click();
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-		Thread.sleep(20000);
-		/*
-		 * JavascriptExecutor js = (JavascriptExecutor) driver; // Scrolling using
-		 * JavascriptExecutor js.executeScript("window.scrollBy(0,500)");
-		 * Thread.sleep(3000);
-		 */
 		WebElement colourCheckbox = driver.findElement(By.cssSelector("label[for*='BasicColours_Black']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", colourCheckbox);
-		Thread.sleep(1000);
 		colourCheckbox.click();
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 	}
