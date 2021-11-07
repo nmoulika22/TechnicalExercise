@@ -22,7 +22,7 @@ public class ProductCartPage {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", cartItemCount);
 		Thread.sleep(1000);
 		Assert.assertEquals(expectedQuantityInCart, Integer.parseInt(cartItemCount.getText()));
-		WebElement cartButton = driver.findElement(By.cssSelector("button[class*='mini-cart-button']"));
+		WebElement cartButton = driver.findElement(By.cssSelector("span[class='badge-icon cart-icon']"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", cartButton);
 		Thread.sleep(10000);
