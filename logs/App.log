@@ -441,3 +441,15 @@
 2021-11-07 14:25:51 INFO  StepDefinitionWeb:47 - User has opened the automated browser in maximize mode
 2021-11-07 14:25:55 INFO  StepDefinitionWeb:53 - User loads the Takealot website in the browser
 2021-11-07 14:26:40 INFO  StepDefinitionWeb:106 - Status of the test is: PASSED
+2021-11-07 14:42:32 INFO  StepDefinitionWeb:47 - User has opened the automated browser in maximize mode
+2021-11-07 14:42:37 INFO  StepDefinitionWeb:53 - User loads the Takealot website in the browser
+2021-11-07 14:42:50 INFO  StepDefinitionWeb:60 - User clicks on the Register link
+2021-11-07 14:42:59 INFO  StepDefinitionWeb:68 - User fills in the registration form
+2021-11-07 14:43:03 INFO  StepDefinitionWeb:75 - User registered successfully to the Takealot website
+2021-11-07 14:43:08 INFO  StepDefinitionWeb:106 - Status of the test is: PASSED
+2021-11-07 14:43:15 INFO  StepDefinitionWeb:47 - User has opened the automated browser in maximize mode
+2021-11-07 14:43:19 INFO  StepDefinitionWeb:53 - User loads the Takealot website in the browser
+2021-11-07 14:44:18 INFO  StepDefinitionWeb:106 - Status of the test is: PASSED
+2021-11-07 14:44:24 INFO  StepDefinitionWeb:47 - User has opened the automated browser in maximize mode
+2021-11-07 14:44:29 INFO  StepDefinitionWeb:53 - User loads the Takealot website in the browser
+2021-11-07 14:45:16 INFO  StepDefinitionWeb:106 - Status of the test is: PASSED
