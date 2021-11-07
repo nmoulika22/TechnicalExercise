@@ -40,6 +40,7 @@ public class HomePage extends StepDefinitionWeb {
 		Thread.sleep(1000);
 		brandCheckbox.click();
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		Thread.sleep(20000);
 		/*
 		 * JavascriptExecutor js = (JavascriptExecutor) driver; // Scrolling using
 		 * JavascriptExecutor js.executeScript("window.scrollBy(0,500)");

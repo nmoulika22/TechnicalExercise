@@ -15,6 +15,16 @@ Feature: Takealot website Feature
       | fname | lname | email      | password | teleNo      | message                             |
       | john  | grant | john.grant | test123  | 07000012345 | Welcome to the TAKEALOT.com family! |
       
+  Scenario Outline: Global search and add specific watch to the basket
+    When user searches for the product "<findModel>"
+    And add specific watch "<addModel>" to the basket
+    Then verify whether the product added correctly to the basket "<findModel>"
+    Then close the browser
+
+    Examples: 
+      | findModel                                             | addModel                                           |
+      | Garmin QuickFit 22mm Silicone Watch Band - Flame Red  | garmin-quickfit-22mm-silicone-watch-band-flame-red |  
+  
   Scenario Outline: Filter search and add specific watch to the basket
     When user searches for the product "<product>"
     And filter by specific brand "<brand>" and colour
@@ -25,13 +35,3 @@ Feature: Takealot website Feature
     Examples: 
       | product | brand   | model                                 | findModel                               | 
       | watches | Garmin  | garmin-forerunner-35-smartwatch-black | Garmin Forerunner 35 Smartwatch - Black |
-      
-   Scenario Outline: Global search and add specific watch to the basket
-    When user searches for the product "<findModel>"
-    And add specific watch "<addModel>" to the basket
-    Then verify whether the product added correctly to the basket "<findModel>"
-    Then close the browser
-
-    Examples: 
-      | findModel                                             | addModel                                           |
-      | Garmin QuickFit 22mm Silicone Watch Band - Flame Red  | garmin-quickfit-22mm-silicone-watch-band-flame-red |
