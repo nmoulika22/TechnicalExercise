@@ -24,7 +24,8 @@ public class ProductCartPage {
 		WebElement cartButton = driver.findElement(By.cssSelector("button[class*='mini-cart-button']"));
 		cartButton.click();
 		Thread.sleep(10000);
-		WebElement productInCartPage = driver.findElement(By.cssSelector("a [class*='item-title']"));
+		WebElement productInCartPage = driver.findElement(By.cssSelector("a h3"));
+		System.out.println(productInCartPage.getText());
 		Assert.assertEquals(expectedProductInCart, productInCartPage.getText());
 	}
 }
